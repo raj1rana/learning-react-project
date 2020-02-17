@@ -22,7 +22,8 @@ class App extends React.Component{
     const filterMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(search.toLowerCase()) );
     return(
       <div className="App">
-        <SearchBox placeholder = "search monstors" handelChange={e => this.setState({search: e.target.value}, ()=> console.log(this.state))} />
+        <h1>Monsters Rolodax</h1>
+        <SearchBox placeholder = "search monstors" handelChange={e => this.setState({search: e.target.value})} />
       <CardList monsters= {filterMonsters} >
       </CardList>
       </div>
